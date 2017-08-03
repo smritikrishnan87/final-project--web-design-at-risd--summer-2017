@@ -182,10 +182,12 @@ div.panel {
   float: left;
   position: relative;
   left:20px;
+  top:60px;
   width: 50%;
   padding: 10px 3em;
+
 }
-/* Acordeon styles */
+
 .tab {
   position: relative;
   left: 250px;
@@ -203,34 +205,35 @@ label {
   position: relative;
   display: block;
   padding-left: 10px;
-  background: #16a085;
+  background: #e52466;
   font-weight: bold;
   line-height: 2;
   cursor: pointer;
+  font-size: 140%;
 }
 
 .tab-content {
-max-height: 0;
-
+  max-height: 0;
   overflow: hidden;
-  background: #1abc9c;
+  background: #edc0d5;
   -webkit-transition: max-height .35s;
   -o-transition: max-height .35s;
   transition: max-height .35s;
+  float:left;
 }
 
 .tab-content p {
   margin: 1em;
 }
-/* :checked */
+ /*when the icon is checked*/
 input:checked ~ .tab-content {
-  max-height: 100em;
+  max-height: 200em;
 }
-/* Icon */
+/* the iccon */
 label::after {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -5px;
   display: block;
   width: 5em;
   height: 5em;
@@ -247,11 +250,17 @@ input[type=radio] + label::after {
   content: "\25BC";
 }
 input[type=checkbox]:checked + label::after {
-  transform: rotate(315deg);
+  transform: rotate(402deg);
 }
 input[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
+
+h1 {font-family: 'Avenir', 'Arial';
+top:35px;
+position: relative;
+text-align: left;}
+
 
 
    </style>
@@ -278,10 +287,12 @@ input[type=radio]:checked + label::after {
         });
     });
     $.noConflict();
-</script>
+  </script>
 
-   </head>
+</head>
+
 <body>
+
 <div id="main">
   <div id="wrapperHeader">
     <div id="header">
@@ -314,7 +325,6 @@ input[type=radio]:checked + label::after {
 
 
 
-
 <div class="wrap">
 
   <div class="half">
@@ -322,30 +332,31 @@ input[type=radio]:checked + label::after {
       <input id="tab-one" type="checkbox" name="tabs">
       <label for="tab-one">Magazines</label>
       <div class="tab-content">
-        <img class="fancybox" src="img/print/magazine_smoothie.png" alt="pic 2" title="Whip logo" style="width:50%; height:auto; margin:10px;">
+        <img class="fancybox" src="img/print/magazine_smoothie.png" alt="pic 2" title="Magazine spread, Lehigh University 2017" style="width:50%; height:auto; margin-top:30px;margin-left:30px; margin-bottom:30px;">
       </div>
     </div>
     <div class="tab">
       <input id="tab-two" type="checkbox" name="tabs">
       <label for="tab-two">Book Covers</label>
       <div class="tab-content">
-        <p><img class="fancybox" src="img/print/scarletletter.png" alt="pic 2" title="Whip menu" style="max-width:20%; height:auto;">
+        <p style="float:left"><img class="fancybox" src="img/print/scarletletter.png" alt="pic 2" title="Scarlet Letter, RISD Summer Studies 2017" style="max-width:25%; height:auto; position:relative; float:left;margin-top:15px;margin-bottom:15px;margin-left:15px;">
 
-            <img class="fancybox" src="img/print/striped.png" alt="pic 2" title="Whip packaged good" style="max-width:20%; height:auto;">
+            <img class="fancybox" src="img/print/striped.png" alt="pic 2" title="The Boy In the Striped Pajamas, RISD Summer Studies 2017" style="max-width:25%; height:auto;position:relative; left:-39px;margin-top:15px; margin-bottom:10px; margin-right:15px;">
 
-            <img class="fancybox" src="img/print/human.png" alt="pic 2" title="Whip packaged good" style="max-width:20%; height:auto;"></p>
+            <img class="fancybox" src="img/print/human.png" alt="pic 2" title="The Most Human Human, RISD Summer Studies 2017" style="max-width:25%; height:auto;position:relative;margin-top:15px; margin-bottom:10px;left:-45px;"></p>
       </div>
     </div>
     <div class="tab">
       <input id="tab-three" type="checkbox" name="tabs">
       <label for="tab-three">Documentation</label>
       <div class="tab-content">
-        <p><img class="fancybox" src="img/print/letterhead.png" alt="pic 2" title="Whip business card" style="max-width:20%; height:auto;"></p>
+        <p><img class="fancybox" src="img/print/letterhead.png" alt="pic 2" title="Whip business card" style="max-width:25%; height:auto;margin-top:30px; margin-left:30px;"></p>
       </div>
     </div>
   </div>
+  </div>
 
-
+<h1>Print Design</h1>
 
 
 
