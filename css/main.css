@@ -1,0 +1,35 @@
+p {
+    position:relative;
+    top: 20px;
+    left:100px;
+}
+
+h1 {
+    text-align:center;
+    font-family:Gotham;
+    font-size: 60px;
+    padding: 1px;
+    color:rgb(21,21,45);
+}
+
+h2 {
+    text-align:center;
+    word-spacing: 1em;
+    font-family:Kalinga;
+    padding-bottom:45px;
+    color:rgb(21,21,45);
+}
+table.center {
+    width:31%;
+    margin-left:29%;
+    margin-right:29%;
+    padding-bottom: 40px;
+
+}
+
+footer {
+    font-family: Kalinga;
+    text-align:center;
+    padding-top: 80px;
+    color:rgb(21,21,45);
+}
