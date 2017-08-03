@@ -1,4 +1,4 @@
-/* BREATHING ANIMATION */
+/* KEYFRAMES */
 
 @keyframes breathing {
   from {
@@ -15,6 +15,12 @@
 
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes expand {
+  50% {
+    padding: 20px;
   }
 }
 
@@ -203,7 +209,9 @@ h2 {
    /*border: 1px solid gold;*/
 }
 
+/* ANIMATIONS */
+
 .animated {
-   animation: 5s linear 2s infinite alternate none running breathing;
+   animation: breathing 5s linear 2s alternate infinite none running;
 
 }
