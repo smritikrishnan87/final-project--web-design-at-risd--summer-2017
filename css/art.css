@@ -52,11 +52,26 @@ footer {
 }
 
 .artwork {
-   width: 80%;
+   /*width: 80%;*/
    margin: 20px auto;
    border-radius: 10px;
    background-color: hsla(0, 0%, 100%, 0.7);
    overflow: hidden;
+}
+
+.artwork img {
+   max-width: 100%;
+}
+
+.series img {
+   width: 50%;
+   height: auto;
+}
+
+.series {
+   display: flex;
+   flex-flow: row wrap;
+   border: 1px solid green;
 }
 
 /*.artwork iframe {
@@ -172,7 +187,7 @@ footer p {
    padding: 10px 0;
 }
 
-.date, .medium, .description {
+.date, .medium, .size, .description {
    font: 300 0.8rem "Raleway", "Open Sans";
    line-height: 1.2rem;
 }

@@ -1,3 +1,23 @@
+/* BREATHING ANIMATION */
+
+@keyframes breathing {
+  from {
+    transform: scale(0.9);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 /* UNIVERSAL */
 
 html {
@@ -181,4 +201,9 @@ h2 {
    color: white;
    padding: 2px 0;
    /*border: 1px solid gold;*/
+}
+
+.animated {
+   animation: 5s linear 2s infinite alternate none running breathing;
+
 }
