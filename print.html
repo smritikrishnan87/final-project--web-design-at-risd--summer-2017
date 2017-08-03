@@ -180,15 +180,17 @@ div.panel {
 
 .half {
   float: left;
+  position: relative;
+  left:20px;
   width: 50%;
-  padding: 10px 1em;
+  padding: 10px 3em;
 }
 /* Acordeon styles */
 .tab {
   position: relative;
   left: 250px;
   margin-bottom: 1px;
-  width: 1000%;
+  width: 120%;
   color: #fff;
   overflow: hidden;
 }
@@ -208,7 +210,8 @@ label {
 }
 
 .tab-content {
-  max-height: 0;
+max-height: 0;
+
   overflow: hidden;
   background: #1abc9c;
   -webkit-transition: max-height .35s;
@@ -221,7 +224,7 @@ label {
 }
 /* :checked */
 input:checked ~ .tab-content {
-  max-height: 10em;
+  max-height: 100em;
 }
 /* Icon */
 label::after {
@@ -319,7 +322,7 @@ input[type=radio]:checked + label::after {
       <input id="tab-one" type="checkbox" name="tabs">
       <label for="tab-one">Magazines</label>
       <div class="tab-content">
-        <p><img class="fancybox" src="img/print/magazine_smoothie.png" alt="pic 2" title="Whip logo" style="max-width:20%; height:auto;"></p>
+        <img class="fancybox" src="img/print/magazine_smoothie.png" alt="pic 2" title="Whip logo" style="width:50%; height:auto; margin:10px;">
       </div>
     </div>
     <div class="tab">
