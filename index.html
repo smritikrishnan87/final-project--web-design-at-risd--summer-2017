@@ -2,10 +2,170 @@
 <html lang="en">
 <head>
    <meta charset="utf-8">
-   <title></title>
-   <link href="css/base.css" rel="stylesheet">
-   <link href="css/main.css" rel="stylesheet">
+
+   <title>Katie Teitelbaum's Porfolio</title>
+   <!--<link href="css/base.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">-->
+<style type="text/css">
+@media (max-width: 699px) and (min-width: 520px) {
+  @viewport {
+    width: 640px;
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Avenir';   /*GeosansLight, Avenir, Gill Sans,Yuanti TC*/
+    font-size: 10px;
+    font-weight: 400;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+div.wrapper {
+  margin-left: 62px;
+  margin-top: 40px;
+  width: 160px;
+  height: auto;
+  float:left;
+  position: fixed;
+}
+
+p {
+  font-family: georgia;
+  font-size: 1rem;
+  line-height: 25px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+nav.vertical {
+  border-radius: 4px;
+
+  overflow: hidden;
+  text-align: center;
+}
+
+  nav.vertical > ul {
+    list-style-type: none;
+  }
+
+    nav.vertical > ul > li {
+      display: block;
+    }
+
+      nav.vertical > ul > li > a {
+        background-color: #fff;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        color: rgb(255,255,255);
+        display: block;
+        font-size: .85rem;
+        font-weight: 500;
+        height: 50px;
+        letter-spacing: .5rem;
+        line-height: 50px;
+        text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        text-transform: uppercase;
+        transition: all .1s ease;
+        text-decoration: none;
+      }
+
+        nav.vertical > ul > li > a:hover {
+         background-color: #bbbbbb;
+         cursor: pointer;
+        }
+
+          nav.vertical > ul > li > div {
+            background-color: rgb(255,255,255);
+          }
+
+          nav.vertical > ul > li > div > ul {
+            list-style-type: none;
+          }
+
+            nav.vertical > ul > li > div > ul > li > a {
+             background-color: rgb(255,255,255);
+             border-bottom: 1px solid rgba(0,0,0,.05);
+             color: #333331;
+             display: block;
+             font-size: 1.1rem;
+             padding-top:20px;
+             padding-bottom: 15px;
+             text-decoration: none;
+             transition: all 0.15s linear;
+            }
+
+              nav.vertical > ul > li > div > ul > li:hover > a {
+                background-color: #bbbbbb;
+                color: rgb(255,255,255);
+
+              }
+
+
+
+</style>
 </head>
+
 <body>
+<div class="homepage">
+<div id="main">
+  <div id="wrapperHeader">
+    <div id="header">
+             <header><img src="img/header_image.png" width="100%" height="auto" alt="header" style="margin-top:-25px;" /></header>
+    </div>
+</div>
+
+<div class="wrapper">
+  <nav class="vertical">
+    <ul>
+      <li>
+
+        <div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#poster">Poster Design</a></li>
+            <li><a href="#print">Print Design</a></li>
+            <li><a href="#brand">Branding</a></li>
+            <li><a href="#conact">Contact</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+<hr width="1" size="370" style="color: #bbbbbb; position:relative; top:-350px; left:200px;">
+</div>
+
+<div id="image_left"></div>
+
+<div id="image_middle"></div>
+
+<div id="image_right"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
