@@ -15,10 +15,12 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2c343b;
   background-color: #f2f2f2;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 a {
   color: #d44457;
@@ -27,6 +29,35 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.logo {
+  left: 50px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  width: 22px;
+}
+
+.title {
+  left: 50px;
+  position: absolute;
+  top: 180px;
+  width: 60%;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.title p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 /* --------------------------------
