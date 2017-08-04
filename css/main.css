@@ -27,22 +27,6 @@ header p {
    color:white;
    background: linear-gradient(white 90%, transparent);
 }
-.buttons {
-   font-family: 'Oswald', serif;
-   font-size: 200%;
-   letter-spacing: 5px;
-   padding-left:20px;
-}
-
-h2 {
-   position:fixed;
-   font-size:20px;
-   letter-spacing: 1px;
-   text-decoration: none;
-   float:top left;
-   top:-10px;
-   opacity: 0.5;
-}
 
 a:link {
    color:#643974;
