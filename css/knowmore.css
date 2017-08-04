@@ -1,25 +1,3 @@
-@keyframes changing-color {
-   from {
-         color: #DD4C4C;
-   }
-
-   25% {
-         color: royalblue;
-   }
-
-   50% {
-         color: #DD4C4C;
-   }
-
-   75% {
-         color: royalblue;
-   }
-
-   to {
-         color: #DD4C4C;
-   }
-}
-
 html {
   font-family: 'Roboto', sans-serif;
 }
@@ -28,6 +6,8 @@ html, body {
   background-color: white;
   margin: 0;
   padding: 0;
+  position: relative;
+  min-height: 100%;
 }
 
 .banner {
@@ -86,24 +66,34 @@ html, body {
   color: white;
 }
 
-.css:hover {
-  color: royalblue;
-}
-
-.final:hover {
-  color: royalblue;
-}
-
-h1 {
+.banner h1 {
   font-size: 56px;
 }
 
-.html:hover {
-  color: royalblue;
+.banner h2 {
+  font-size: 28px;
 }
 
-.jquery:hover {
-  color: royalblue;
+.banner h3 {
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.banner p {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 2px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.contactlist {
+  width: 40%;
+  text-align: left;
 }
 
 .nav {
@@ -148,37 +138,8 @@ h1 {
   margin-left: 0.5em;
 }
 
-.row {
-  width: 100%;
+.banner ul {
+  text-align: left;
+  list-style: none;
 }
 
-.row_cell {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  text-align: center;
-  margin: 1em 1em;
-  border: solid 2px white;
-  border-radius: 25px;
-}
-
-.row_cell img {
-  width: 120px;
-  height: auto;
-  margin: 2.5em 0 0 0.9em;
-  vertical-align: center;
-}
-
-.row_cell p {
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-.tagline {
-  font-weight: 100;
-  margin: 0.5em 0 1em 0;
-  padding: 0;
-}
