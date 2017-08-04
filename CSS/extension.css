@@ -1,0 +1,98 @@
+h1{
+	margin: 50px;
+	text-align: center;
+	font-family: "Monaco";
+    color:#0B3C5D;
+    width: 50px;
+    border: 10px solid #BFDBD2;
+    padding: 20px;
+    margin-top: 1em;
+    border-radius: 3px;
+    width: 200px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    font-size: 50px;
+    background-color:#E9E7DA;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:link {
+	color: #0B3C5D;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a:visited {
+	color:#0B3C5D;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+a:hover {
+    color:#AF473C;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+h2 {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Monaco";
+	color:white;
+	margin-top: 50px;
+	line-height: 50px;
+}
+
+h3 {
+	text-align: center;
+	line-height: 25px;
+	margin-top: 5em;
+	font-family: "Monaco";
+	color: #E7DFDD;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+
+li {
+	text-align: left;
+	margin-left: 200px;
+	list-style-type: none;
+
+}
+
+body {
+	background-color:#373737;
+	min-width: 980px; 
+	text-align: center; 
+}
+
+
+footer {
+	color:#7FC3BC;
+}
+
+
+div.item {
+    vertical-align:bottom;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+img {
+    width: 500px;
+    height: 550px;
+}
+.caption {
+    display: block;
+
+p {
+
+}
+
+div {
+	margin-top: 60px;
+}
