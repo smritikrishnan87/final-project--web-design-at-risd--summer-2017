@@ -1,0 +1,78 @@
+html {background-color: pink
+  color:black;
+}
+h1 {
+  font-style:Bold;
+  font: 32px
+
+}
+
+
+body{background-color: pink;}
+.dropdown {
+  position: relative;
+}
+.drop-nav {
+  position: absolute;
+  display: none;
+}
+
+.drop-nav li, .main-nav li {
+  border-color: 1px black;
+  display: inline-block;
+
+}
+.dropdown:hover >.drop-nav {
+  display: block;
+}
+nav{
+   float: right;
+   margin: 0;
+   padding: 0;
+   position: fixed;
+   right: 0;
+   top: 0;
+   width: 100%;
+
+}
+.main-header{
+  display: box;
+  color: black;
+  height: 60px;
+}
+
+li{padding: 40px;
+leading:30px;
+color pink;}
+
+.main-nav {
+  width: 100%
+  height: 10px;
+  background-color: black;
+  margin: 0;
+  font-size: 20px;
+  color:white;
+}
+.con {
+  padding: 300px;
+  font-size:40px;
+}
+
+.about {
+  font-size: 24px;}
+
+.name {
+  font-size: 30px;
+  margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    padding:200px;
+}
+
+.nameing {
+  font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+
