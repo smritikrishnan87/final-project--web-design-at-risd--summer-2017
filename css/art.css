@@ -89,8 +89,8 @@ footer {
    justify-content: space-around;
    border-radius: inherit;
    overflow: hidden;
-   padding: 10px;
-   border: 1px solid yellow;
+   /*padding: 10px;*/
+   /*border: 1px solid yellow;*/
 }
 
 .series a {
@@ -105,7 +105,7 @@ footer {
    overflow: hidden;
    display: inherit;
    /*margin: 10px;*/
-   border: 1px solid hotpink;
+   /*border: 1px solid hotpink;*/
 }
 
 .makesameheight {
@@ -114,9 +114,7 @@ footer {
 }
 
 .smaller img {
-   max-width: 616px;
    height: 100%;
-   margin: 0 auto;
 }
 
 .fullwidth img {
@@ -232,6 +230,7 @@ h3 {
 }
 
 footer p {
+   line-height: 1.3rem;
    padding: 10px 0;
 }
 
