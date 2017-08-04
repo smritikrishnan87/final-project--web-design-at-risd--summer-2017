@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Print Design</title>
+   <link href="css/base.css" rel="stylesheet">
+   <link href="css/print.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+  </script>
+
+</head>
+
+<body>
+
+<div id="main">
+  <div id="wrapperHeader">
+    <div id="header">
+             <header><img src="img/header_image.png" style="max-width:100%; height:auto" alt="header" style="margin-top:-25px;" /></header>
+    </div>
+</div>
+
+<div class="wrapper">
+  <nav class="vertical">
+    <ul>
+      <li>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="poster.html">Poster Design</a></li>
+            <li><a href="print.html">Print Design</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+<hr width="1" size="370" style="color: #bbbbbb; position:relative; top:-308px; left:180px;">
+</div>
+</div>
+
+
+
+<div class="wrap">
+
+  <div class="half">
+    <div class="tab">
+      <input id="tab-one" type="checkbox" name="tabs">
+      <label for="tab-one">Magazines</label>
+      <div class="tab-content">
+        <img class="fancybox" src="img/print/magazine_smoothie.png" alt="pic 2" title="Magazine spread, Course: Introduction to Graphic Design, Lehigh University 2017" style="width:50%; height:auto; margin-top:30px;margin-left:30px; margin-bottom:30px;">
+      </div>
+    </div>
+    <div class="tab">
+      <input id="tab-two" type="checkbox" name="tabs">
+      <label for="tab-two">Book Covers</label>
+      <div class="tab-content">
+        <p style="float:left"><img class="fancybox" src="img/print/scarletletter.png" alt="pic 2" title="Scarlet Letter, RISD Summer Studies 2017" style="max-width:25%; height:auto; position:relative; float:left;margin-top:15px;margin-bottom:15px;margin-left:15px;">
+
+            <img class="fancybox" src="img/print/striped.png" alt="pic 2" title="The Boy In the Striped Pajamas, RISD Summer Studies 2017" style="max-width:25%; height:auto;position:relative; left:-45px;margin-top:15px; margin-bottom:10px; margin-right:15px;">
+
+            <img class="fancybox" src="img/print/human.png" alt="pic 2" title="The Most Human Human, RISD Summer Studies 2017" style="max-width:25%; height:auto;position:relative;margin-top:15px; margin-bottom:10px;left:-45px;"></p>
+      </div>
+    </div>
+    <div class="tab">
+      <input id="tab-three" type="checkbox" name="tabs">
+      <label for="tab-three">Documentation</label>
+      <div class="tab-content">
+        <p><img class="fancybox" src="img/print/letterhead.png" alt="pic 2" title="Personal Letterhead, RISD Summer Studies 2017" style="max-width:26%; height:auto;margin-top:15px; position:relative;left:-233px;margin-bottom:15px;"></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<h1 style="font-size:200%;font-weight:bold;">Print Design</h1>
+
+
+
+
+
+
+</body>
+</html>

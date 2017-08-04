@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Branding</title>
+   <link href="css/base.css" rel="stylesheet">
+   <link href="css/branding.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+
+<script>
+function openBrand(evt, brand) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(brand).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</head>
+
+<body>
+
+<body>
+<div class="homepage">
+<div id="main">
+  <div id="wrapperHeader">
+    <div id="header">
+             <header><img src="img/header_image.png" style="max-width:100%; height:auto" alt="header" style="margin-top:-25px;" /></header>
+    </div>
+</div>
+
+<div class="wrapper">
+  <nav class="vertical">
+    <ul>
+      <li>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="poster.html">Poster Design</a></li>
+            <li><a href="print.html">Print Design</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+<hr width="1" size="340" style="color: #bbbbbb; position:relative; top:-308px; left:180px;">
+</div>
+</div>
+
+
+<h1 style="font-size:200%;font-weight:bold;position:relative; left:600px; top:10px;">Branding</h1>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openBrand(event, 'whip')">Whip</button>
+  <button class="tablinks" onclick="openBrand(event, 'decoupleA')">Decuple A</button>
+
+</div>
+
+<div id="whip" class="tabcontent">
+
+  <img class="fancybox" src="img/brand/whiplogo.png" alt="pic 1" title="Whip logo, Course: Introduction to Graphic Design, Lehigh University 2017" style="max-width:18%; height:auto;position:relative;top:40px;left:335px;">
+
+   <img class="fancybox" src="img/brand/wbizcard.png" alt="pic 1" title="Whip business card, Course: Introduction to Graphic Design, Lehigh University 2017" style="max-width:34.4%; height:auto;position:relative;top:40px;left:350px;">
+
+    <img class="fancybox" src="img/brand/menu.png" alt="pic 1" title="Whip menu, Course: Introduction to Graphic Design, Lehigh University 2017" style="max-width:34%; height:auto;position:relative;top:240px;right:242px;">
+
+     <img class="fancybox" src="img/brand/pancakemix.png" alt="pic 1" title="Whip packaged good, Course: Introduction to Graphic Design, Lehigh University 2017" style="max-width:9.35%; height:auto;position:relative;top:240px;right:185px;">
+</div>
+
+<div id="decoupleA" class="tabcontent">
+
+  <img class="fancybox" src="img/brand/declogo.png" alt="pic 1" title="Decuple logo, Course: Type & Image, RISD Summer Studies 2017" style="max-width:16%; height:auto; position:relative; left:290px; top:-81px;">
+
+   <img class="fancybox" src="img/brand/dbizcardf.png" alt="pic 1" title="Decuple business card (front), Course: Type & Image, RISD Summer Studies 2017" style="max-width:20%; height:auto;position:relative; left:320px; top:-82px">
+
+    <img class="fancybox" src="img/brand/dbizcardb.png" alt="pic 1" title="Decuple business card (back), Course: Type & Image, RISD Summer Studies 2017" style="max-width:20%; height:auto;position:relative;top:-82px;left:350px;">
+
+     <img class="fancybox" src="img/brand/dletter.png" alt="pic 1" title="Decuple letterhead, Course: Type & Image, RISD Summer Studies 2017" style="max-width:16%; height:auto;position:relative;top:179px;right:334px;">
+
+     <img class="fancybox" src="img/brand/denevelop.png" alt="pic 1" title="Decuple envelop, Course: Type & Image, RISD Summer Studies 2017" style="max-width:20%; height:auto;position:relative;top:46px;right:304px;">
+
+     <img class="fancybox" src="img/brand/dpen.png" alt="pic 1" title="Decuple pen, Course: Type & Image, RISD Summer Studies 2017" style="max-width:5%; height:auto; position:relative;top:220px;right:190px;">
+</div>
+
+
+
+
+
+
+</body>
+</html>
