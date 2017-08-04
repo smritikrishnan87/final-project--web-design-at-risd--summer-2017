@@ -9,6 +9,13 @@
    background-color: black;
    z-index: -1;
 }
+#nav-container-general{
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
 h2{
    position: absolute;
    top: 300px;
