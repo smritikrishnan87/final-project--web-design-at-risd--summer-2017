@@ -1,4 +1,4 @@
-html {background-color: pink
+html {background-color: pink;
   color:black;
 }
 h1 {
@@ -57,6 +57,8 @@ color pink;}
 .main-nav a {
   color: #ffffff;
   text-decoration: none;
+  font-family: French Script MT Regular;
+  font-size: 40px
 }
 
 .con {
@@ -83,3 +85,10 @@ color pink;}
     padding:200px;
 }
 
+h6 {
+   bottom: 0;
+   right: 0;
+   Position: fixed;
+   color: black;
+   font-style: bold;
+ }
