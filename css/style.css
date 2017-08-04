@@ -309,11 +309,132 @@ betr
 .betr-logo {
   display: block;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 100px;
   text-align: center;
   width: 100%;
 }
 
+.betr-body {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  top: 53px;
+  width: 65%;
+}
+
+.betr-sidebar {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+  top: -23px;
+  width: 25%;
+}
+
+.betr-sidebar h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.betr-sidebar h2 {
+  font-size: 14px;
+  font-variant: small-caps;
+  font-weight: 300;
+  letter-spacing: .25px;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+}
+
+.betr-sidebar h3 {
+  color: #aaa;
+  font-size: 12px;
+  letter-spacing: .5px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.betr-sidebar p {
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .25px;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.betr-sidebar a {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 30px;
+}
+
+.betr-sidebar a:hover {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 30px;
+}
+
+.betr-body h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.betr-body h3 {
+  color: #111;
+  font-size: 12px;
+  letter-spacing: .5px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.betr-body p {
+  color: #111;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .25px;
+  line-height: 1.6em;
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.betr-body span {
+  color: #111;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .25px;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+}
 
 /* --------------------------------
 
