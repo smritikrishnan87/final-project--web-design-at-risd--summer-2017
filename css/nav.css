@@ -1,0 +1,38 @@
+#nav-container{
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    height: auto;
+/*    background-color: red;*/
+}
+#nav{
+    list-style-type: none;
+    margin: 30px 60px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-bottom:1px solid #bbb;
+}
+
+li:first-child {
+/*    border-right: none;*/
+}
+
+li a {
+    font-size: 1em "Roboto";
+    font-weight: 100;
+    display: block;
+    color: white;
+    padding: 18px 2px;
+    letter-spacing: 5px;
+    text-decoration: none;
+/*    transition: background 2s ease-in-out;*/
+}
+
+li a:hover{
+    background-color: #111;
+    color: rgba(170,170,170,1);
+}

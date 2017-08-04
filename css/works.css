@@ -1,0 +1,76 @@
+#works-container{
+   width: 100%;
+   height: 1500px;
+   background-color: black;
+}
+#image-container{
+   position: relative;
+   width: 1200px;
+   height: 800px;
+   top: 200px;
+   left: 7%;
+/*   border: 1px solid white;*/
+/*   background-color: white;*/
+}
+
+/*h2{
+   color: orange;
+   font: 2em "Garamond";
+   font-weight: 100;
+   font-variant: small-caps;
+   letter-spacing: 10px;
+}*/
+/*#first {
+   position: relative;
+   top: 250px;
+   left: 250px;
+}
+#second {
+   position: relative;
+   top:;
+}*/
+.frames{
+   position: relative;
+   width: 350px;
+   height: 400px;
+   float: left;
+   margin-left: 45px;
+   margin-bottom: 70px;
+/*   border: 2px solid grey;*/
+/*   border: 2px ;*/
+/*   border-radius: 55px;*/
+}
+
+.frame:hover {
+   opacity: 0.6;
+}
+.frame{
+   width: 350px;
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+}
+/*.branding{
+   position: absolute;
+   width: 380px;
+   top: 10px;
+}*/
+
+.middle{
+   width: 350px;
+   height: 50px;
+   position: absolute;
+   bottom: 0;
+   background-color: grey;
+   background-color: rgb(50,50,50)
+}
+.text{
+   color: white;
+   font: 20px "Garamond";
+   text-align: center;
+   padding-top: 12px;
+   letter-spacing: 5px;
+}
