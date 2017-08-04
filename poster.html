@@ -132,7 +132,56 @@ nav.vertical {
   left: 10px;
 }
 
-    }
+}
+/*body {
+  margin: 0 auto;
+  max-width: 60em;
+  line-height: 1.3;*/
+}
+ul, li {
+  margin:0px;
+  padding: 0px;
+  list-style: none;
+}
+
+
+
+/*Flex items*/
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 293px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.list-item {
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+}
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+.list-content {
+  background-color: #CAEEF0;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+.list-content p {
+  flex: 1 0 auto;
+  font-family: 'Avenir';
+  line-height: 0.2;
+}
    </style>
 
    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -191,21 +240,68 @@ nav.vertical {
 </div>
 </div>
 
-<img class="fancybox" src="img/poster/taylorswiftposter.png" alt="pic 1" title="Smoothie bowl magazine spread" style="max-width:20%; height:auto;">
+<h1 style="position:relative; left:600px;">Poster Design</h1>
 
-<img class="fancybox" src="img/poster/tbw.png" alt="pic 2" title="Whip logo" style="max-width:20%; height:auto;">
+<div id="main">
+<ul class="list">
+  <li class="list-item">
+    <div class="list-content">
+      <img class="fancybox" src="img/poster/taylorswiftposter.png" alt="pic 1" title="Queen of Hearts, Course: Two-Dimentional Design, Lehigh University 2016" style="max-width:100%; height:auto;">
+      <br>
+      <p><b>Queen of Hearts</b></p>
+      <p>Lehigh University 2016</p>
+    </div>
+  </li>
 
-<img class="fancybox" src="img/poster/fallfest.png" alt="pic 2" title="Whip business card" style="max-width:20%; height:auto;">
+   <li class="list-item">
+    <div class="list-content">
+      <img class="fancybox" src="img/poster/tbw.png" alt="pic 2" title="Terror Behind the Walls, Organization: Residence Hall Association, Lehigh University 2016" style="max-width:52%; height:auto; margin-left:54px;">
+      <br>
+      <p><b>Terror Behind the Walls</b></p>
+      <p>Lehigh University 2016</p>
 
-<img class="fancybox" src="img/poster/hwtick.png" alt="pic 2" title="Whip menu" style="max-width:20%; height:auto;">
+    </div>
+  </li>
 
-<img class="fancybox" src="img/poster/lightup.png" alt="pic 2" title="Whip packaged good" style="max-width:20%; height:auto;">
+  <li class="list-item">
+    <div class="list-content">
+      <img class="fancybox" src="img/poster/hwtick.png" alt="pic 2" title="Hall Wars Invitation, Organization: Residence Hall Association, Lehigh University 2016" style="max-width:55%; height:auto; margin-left:54px;">
+      <br>
+      <p><b>Hall Wars Kick Off 2016</b></p>
+      <p>Lehigh University 2016</p>
+    </div>
+  </li>
 
-<img class="fancybox" src="img/poster/gatsby1.png" alt="pic 2" title="Whip packaged good" style="max-width:20%; height:auto;">
+  <li class="list-item">
+    <div class="list-content">
+      <img class="fancybox" src="img/poster/gatsby1.png" alt="pic 2" title="Gatsby Gala Flier, Organization: Student Senate, Lehigh University 2017" style="max-width:52%; height:auto;margin-left:54px;">
+      <br>
+      <p><b>Gatsby Gala Flier</b></p>
+      <p>Lehigh University 2017</p>
+    </div>
+  </li>
 
-<img class="fancybox" src="img/poster/gatsby2.png" alt="pic 2" title="Whip packaged good" style="max-width:20%; height:auto;">
+  <li class="list-item">
+    <div class="list-content">
+      <img class="fancybox" src="img/poster/gatsby2.png" alt="pic 2" title="Gatsby Gala Professor Invitation, Organization: Student Senate, Lehigh University 2017" style="max-width:52%; height:auto;margin-left:54px;">
+      <br>
+      <p><b>Gatsby Gala Invitation</b></p>
+      <p>Lehigh University 2017</p>
+    </div>
+  </li>
 
-<img class="fancybox" src="img/poster/texturepic.png" alt="pic 2" title="Whip packaged good" style="max-width:20%; height:auto;">
+
+    <li class="list-item">
+    <div class="list-content">
+      <img class="fancybox" src="img/poster/texturepic.png" alt="pic 2" title="Texture Photoshop Poster, Course: Two-Dimentional Design, Lehigh University 2016" style="max-width:49.5%; height:auto;margin-left:54px;">
+      <br>
+      <p><b>Texture Photoshop Poster</b></p>
+      <p>Lehigh University 2017</p>
+    </div>
+  </li>
+</ul>
+
+</div>
 
 
 
