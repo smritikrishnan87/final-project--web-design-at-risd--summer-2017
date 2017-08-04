@@ -1,0 +1,239 @@
+
+/*nav bar*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Avenir';   /*GeosansLight, Avenir, Gill Sans,Yuanti TC*/
+    font-size: 10px;
+    font-weight: 400;
+    height: auto !important;
+    height: 80%;
+    min-height: 80%;
+    text-rendering: optimizeLegibility;
+}
+
+div.wrapper {
+  margin-left: 62px;
+  margin-top: 35px;
+  width: 160px;
+  height: auto;
+  float:left;
+  position: fixed;
+}
+
+p {
+  font-family: georgia;
+  font-size: 1rem;
+  line-height: 25px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+nav.vertical {
+  border-radius: 4px;
+margin-left:25px;
+
+  overflow: hidden;
+  text-align: center;
+}
+
+  nav.vertical > ul {
+    list-style-type: none;
+  }
+
+    nav.vertical > ul > li {
+      display: block;
+    }
+
+      nav.vertical > ul > li > a {
+        background-color: #fff;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        color: rgb(255,255,255);
+        display: block;
+        font-size: .85rem;
+        font-weight: 500;
+        height: 50px;
+        letter-spacing: .5rem;
+        line-height: 50px;
+        text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        text-transform: uppercase;
+        transition: all .1s ease;
+        text-decoration: none;
+      }
+
+        nav.vertical > ul > li > a:hover {
+         background-color: #bbbbbb;
+         cursor: pointer;
+        }
+
+          nav.vertical > ul > li > div {
+            background-color: rgb(255,255,255);
+          }
+
+          nav.vertical > ul > li > div > ul {
+            list-style-type: none;
+          }
+
+            nav.vertical > ul > li > div > ul > li > a {
+             background-color: rgb(255,255,255);
+             border-bottom: 1px solid rgba(0,0,0,.05);
+             color: #333331;
+             display: block;
+             font-size: 1.1rem;
+             padding-top:20px;
+             padding-bottom: 15px;
+             text-decoration: none;
+             transition: all 0.15s linear;
+            }
+
+              nav.vertical > ul > li > div > ul > li:hover > a {
+                background-color: #bbbbbb;
+                color: rgb(255,255,255);
+
+              }
+
+  /*Image magnification*/
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    }
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+/*accordion tabs*/
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0px 18px;
+    display: none;
+    background-color: white;
+}
+
+/*accordion*/
+
+.half {
+  float: left;
+  position: relative;
+  left:25px;
+  top:60px;
+  width: 50%;
+  padding: 10px 3em;
+
+}
+
+.tab {
+  position: relative;
+  left: 250px;
+  margin-bottom: 1px;
+  width: 153%;
+  color: #fff;
+  overflow: hidden;
+
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  background: #55B9BE;
+  font-weight: bold;
+  line-height: 2;
+  cursor: pointer;
+  font-size: 150%;
+  border-radius: 5px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #CAEEF0;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  float:left;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+ /*when the icon is checked*/
+input:checked ~ .tab-content {
+  max-height: 200em;
+}
+/* the iccon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  display: block;
+  width: 5em;
+  height: 5em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(402deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+h1 {font-family: 'Avenir', 'Arial';
+top:15px;
+left:65px;
+position: relative;
+}
+
