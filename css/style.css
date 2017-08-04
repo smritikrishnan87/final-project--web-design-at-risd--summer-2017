@@ -75,6 +75,16 @@ img {
   padding-top: 4px;
 }
 
+footer {
+  display: block;
+  float: bottom;
+  left: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  top: 170px;
+  width: 93%;
+}
+
 
 /* --------------------------------
 
