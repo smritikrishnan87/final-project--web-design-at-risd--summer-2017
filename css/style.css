@@ -1,3 +1,6 @@
+
+
+
 /* --------------------------------
 
 Primary style
@@ -52,11 +55,10 @@ img {
 }
 
 .title {
-  display: inline-block;
-  left: 50px;
-  position: absolute;
-  top: 180px;
-  width: 60%;
+  display: block;
+  margin-left: 50px;
+  margin-top: 160px;
+  position: relative;
 }
 
 .title h1 {
@@ -70,6 +72,159 @@ img {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  padding-top: 4px;
+}
+
+
+/* --------------------------------
+
+Portfolio Works
+
+-------------------------------- */
+
+.work:first-of-type {
+  width: 100%;
+}
+
+.work:nth-of-type(2) {
+  margin-top:35px;
+}
+
+.work:nth-of-type(3) {
+  margin-top:35px;
+}
+
+.work:nth-of-type(4) {
+  margin-top:35px;
+}
+
+.work:nth-of-type(5) {
+  margin-top:35px;
+}
+
+.work:nth-of-type(6) {
+  margin-top:35px;
+}
+
+.project {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 30px;
+  position: relative;
+  width: 25%;
+}
+
+.project-2 {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 30px;
+  position: relative;
+  top: -7px;
+  width: 25%;
+}
+
+.project-3 {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  top: 14px;
+  width: 25%;
+}
+
+.project-4 {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  top: 21px;
+  width: 25%;
+}
+
+.project-5 {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 30px;
+  position: relative;
+  top: -36px;
+  width: 25%;
+}
+
+.project-6 {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 30px;
+  position: relative;
+  top: -42px;
+  width: 25%;
+}
+
+.divider {
+  background-color: #111;
+  height: 1.5px;
+  width: 100%;
+}
+
+.project h1, .project-2 h1, .project-3 h1, .project-4 h1, .project-5 h1, .project-6 h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.project h2, .project-2 h2, .project-3 h2, .project-4 h2, .project-5 h2, .project-6 h2 {
+  font-size: 14px;
+  font-variant: small-caps;
+  font-weight: 300;
+  letter-spacing: .25px;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+}
+
+.project h3, .project-2 h3, .project-3 h3, .project-4 h3, .project-5 h3, .project-6 h3 {
+  color: #aaa;
+  font-size: 12px;
+  letter-spacing: .5px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.project p, .project-2 p, .project-3 p, .project-4 p, .project-5 p, .project-6 p {
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .25px;
+  line-height: 1.4em;
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.project-image {
+  display: inline-block;
+  position: relative;
+  top: 143px;
+  width: 65%;
+}
+
+.project-image-3 {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+  top: 143px;
+  width: 65%;
+}
+
+.project-image-4 {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+  top: 143px;
+  width: 65%;
 }
 
 /* --------------------------------
@@ -84,7 +239,7 @@ Navigation
   left: 500px;
   padding: 5px;
   position: absolute;
-  top: 171px;
+  top: 47px;
 }
 
 .navigation-portfolio {
