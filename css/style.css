@@ -314,6 +314,14 @@ betr
   width: 100%;
 }
 
+.betr-prototype {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
 .betr-body {
   display: inline-block;
   margin-left: 30px;
@@ -339,7 +347,7 @@ betr
   padding: 0;
 }
 
-.betr-sidebar h2 {
+.betr-sidebar h2, .betr-prototype h2 {
   font-size: 14px;
   font-variant: small-caps;
   font-weight: 300;
