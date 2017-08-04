@@ -1,0 +1,69 @@
+@keyframes breathing {
+	0% {
+    transform: scale(0.75);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+div {
+	animation: 5s breathing 2s infinite alternate none running;
+	font-size: 50px;
+	background-size: cover;
+	background-color:#0B3C5D;
+	margin-top: 100px;
+	font-family: "Monaco";
+	padding: 20px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1;} 
+}
+
+.box {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.cat {
+  animation: fadeIn 3s;
+}
+
+div {
+	animation: 5s breathing 0s infinite alternate none running,
+				4s fadeIn 0s infinite alternate none running;
+	margin: 40px;
+	background-size: cover;
+	margin-top: 50px;
+	border-radius: 3px;
+	font-size: 70px;
+	text-align: right;
+}
+
+a:link {
+	color:white;
+	text-decoration: none;
+}
+
+a:visited {
+	color:white;
+}
+
+a:hover {
+    color:#AF473C;
+}
+
+h6 {
+	text-align: center;
+}
