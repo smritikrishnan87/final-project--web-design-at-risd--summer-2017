@@ -1,0 +1,112 @@
+h1{
+  color: white;
+  position: relative;
+  font-family: 'Kino MT';
+  font-size: 110px;
+  margin-left: 90px;
+  margin-top: 300px;
+}
+.block1{
+   background-color: black;
+   width: 40%;
+   position: absolute;
+   height: 100%;
+   left: 0px;
+   top: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    margin-top: 290px;
+    margin-left: 122px;
+    word-spacing: 5px;
+}
+
+li {
+  display: inline;
+  color: #a1dcf0;
+  font-family: 'centaur';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: #a1dcf0;
+  font-family: 'centaur';
+  font-weight: bold;
+  font-size: 20px;
+}
+a:nth-child(4){
+  text-decoration: none;
+  color: #a1dcf0;
+  font-family: 'centaur';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a:hover{
+  color: white;
+}
+
+.logo {
+  position: fixed;
+  top: 0px;
+  left: 891px;
+  background: transparent;
+}
+
+.text{
+  width: 575px;
+  margin-left: 720px;
+  margin-top: -428px;
+}
+
+p:nth-child(2){
+  text-align: left;
+  margin-left: 70px;
+  font-size: 25px;
+}
+
+p:nth-child(3){
+  text-align: left;
+  margin-left: 158px;
+}
+
+p:nth-child(4){
+  text-align: left;
+  margin-left: 161px;
+}
+
+p{
+  font-family: 'centaur';
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: .2px;
+  word-spacing: .2px;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+span{
+  font-family: 'centaur', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  font-variant: small-caps;
+}
+
+.facebook{
+  position: fixed;
+  left: 821PX;
+  top: 462PX;
+}
+
+.instagram{
+  position: fixed;
+  left: 815PX;
+  top: 416PX;
+}
