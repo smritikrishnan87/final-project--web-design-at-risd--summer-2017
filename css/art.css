@@ -79,43 +79,62 @@ footer {
    overflow: hidden;
 }
 
-.seriesof4 img {
-   max-width: 300px;
-   height: 500px;
-   border-radius: 10px;
-   overflow: hidden;
-   margin-bottom: 10px;
-}
+/* SERIES OF IMAGES */
 
-.seriesof4, .seriesof6, .smaller {
+.series, .smaller {
    width: 77%;
    margin: auto;
    display: flex;
    flex-flow: row wrap;
-   justify-content: space-between;
+   justify-content: space-around;
    border-radius: inherit;
    overflow: hidden;
-   /*border: 1px solid yellow;*/
+   padding: 10px;
+   border: 1px solid yellow;
 }
 
-.seriesof6 img {
-   max-width: 300px;
+.series a {
+   padding-bottom: 10px; /* to ensure space between imgs without padding the imgs themselves. all series images must be links :( */
+}
+
+.series img {
+   max-width: 280px;
+   height: 100%;
+   /*height: 500px;*/
    border-radius: 10px;
    overflow: hidden;
-   margin-bottom: 10px;
+   display: inherit;
+   /*margin: 10px;*/
+   border: 1px solid hotpink;
+}
+
+.makesameheight {
+   height: 500px;
+   /*border: 1px solid hotpink;*/
 }
 
 .smaller img {
-   max-width: 610px;
+   max-width: 616px;
    height: 100%;
    margin: 0 auto;
 }
 
+.fullwidth img {
+   max-width: inherit;
+   /*border: 1px solid hotpink;*/
+}
+
+/* SERIES CAPTIONS */
+
 .caption {
-   min-width: 100%;
+   width: 100%;
    padding: 20px;
-   background-color: hsla(0, 0%, 100%, 0.7);
+   background-color: hsla(0, 0%, 100%, 0.8);
    /*border: 1px solid blue;*/
+}
+.series .caption {
+   border-radius: inherit;
+   overflow: hidden;
 }
 
 /* NAV FORMAT */
@@ -227,10 +246,6 @@ footer p {
 
 .date {
    font-style: italic;
-}
-
-.caption {
-   width: inherit;
 }
 
 .description {

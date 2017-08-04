@@ -87,6 +87,8 @@ footer {
    position: absolute;
    bottom: 10%;
    right: 10%;
+   border-radius: 10px;
+   overflow: hidden;
    /*border: 1px solid red;*/
 }
 
@@ -112,7 +114,9 @@ footer {
    position: relative;
    top: 50%;
    width: 100%;
-   box-shadow: 0 0 300px 200px hsla(0, 0%, 80%, 0.7);
+   box-shadow: 0 0 300px 200px hsla(0, 0%, 65%, 0.8);
+   border-radius: 10px;
+   overflow: hidden;
    /*border: 1px solid aqua;*/
 }
 
