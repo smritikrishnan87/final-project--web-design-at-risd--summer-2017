@@ -1,1 +1,126 @@
+#about{
+   width: 100%;
+   height: 3900px;
+   background-color: transparent;
+   z-index: -10;
+}
 
+#contact{
+   width: 20%;
+/*   border: 1px solid white;*/
+   position: relative;
+   margin: auto;
+   top: 410px;
+   text-align: center;
+}
+h5,h6{
+   font: 1.2em "Roboto";
+   font-weight: 300;
+   color: white;
+   opacity: 0.7;
+}
+h5{
+   margin-bottom: 5px;
+   letter-spacing: 3px;
+}
+h6{
+   font-size: 14px;
+   font-weight: 100;
+   letter-spacing: 3px;
+   line-height: 22px;
+   opacity: 0.5;
+}
+table {
+   position: fixed;
+   top: 320px;
+   left: 200px;
+   width:70%;
+   z-index: -1;
+/*   margin: auto;
+   margin-top: 200px;*/
+}
+table, th, td {
+/*   border: 1px solid grey;*/
+   border-collapse: collapse;
+   font: 20px "Roboto";
+   font-weight: 300;
+   letter-spacing: 3px;
+}
+th, td {
+   padding: 20px;
+   text-align: left;
+   color: white;
+}
+table#t01 th {
+   font-size: 15px
+}
+
+/*table#t01 tr:nth-child(2) {
+}
+table#t01 tr:nth-child(3) {
+}
+table#t01 tr:nth-child(4) {
+}
+table#t01 td:nth-child(6) {
+}
+table#t01 td:nth-child(6) {
+}
+*/
+
+.square {
+   width: 95px;
+   height: 65px;
+   background-color: pink;
+   position: relative;
+   top: 280px;
+   left: 1015px;
+   animation: 5s linear 0s
+   1 alternate none running moving;
+}
+.square-sec {
+   width: 95px;
+   height: 65px;
+   background-color: powderblue;
+   position: relative;
+   top: 280px;
+   left: 918px;
+/*    animation: 5s linear 0s
+    1 alternate none running moving;*/
+}
+.square-third{
+   width: 95px;
+   height: 65px;
+   background-color: rgb(255,255,106);
+   position: relative;
+   top: 280px;
+   left: 918px;
+}
+@keyframes moving {
+    0% {
+      background-color: red;
+      top: 280px;
+      left: 725px;
+    }
+    25% {
+      background-color: yellow;
+      top: 280px;
+      left: 820px;
+    }
+    50% {
+      background-color: rgb(12,215,255);
+      top: 280px;
+      left: 915px;
+    }
+    75% {
+      background-color: green;
+      background-color: rgb(145,255,93);
+      background-color: rgb(197,42,255);
+      top: 280px;
+      left: 1010px;
+   }
+    100% {
+      background-color: pink;
+      top: 280px;
+      left: 1015px;
+   }
+}

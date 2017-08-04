@@ -6,19 +6,27 @@
    margin: 0;
 /*   background: rgba(232,180,113,0.5);*/
 }
+
 h3{
    position: relative;
-   top: 120px;
-   left: 300px;
-   font: 2em "Spectral";
-/*   font: 2em "Garamond";*/
+   top: 100px;
+   left: 260px;
+   font: 3em "Spectral";
+/*   font: 2em "PT Serif";*/
+   font-weight: 400;
    color: white;
    opacity: 1;
 /*   letter-spacing: px;*/
 }
-h2 .text{
-   font: 5em "Garamond";
+#text{
+   font: 3em "Roboto";
+   top: 600px;
+   width: 600px;
+   left: 724px;
    color: white;
+   opacity: 0.2;
+   border-right: 3px solid grey;
+   padding: 15px 0;
 }
 #logo{
    position: relative;
@@ -28,7 +36,7 @@ h2 .text{
    width:120px;
    height:"auto";
    margin: 0;
-/*   border: 1px solid rgba(255,255,255,0.5);*/
+   z-index: 100;
 }
 
 #circle-container{
