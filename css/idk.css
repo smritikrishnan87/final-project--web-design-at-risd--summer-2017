@@ -64,10 +64,13 @@ color pink;}
 .con {
   padding: 300px;
   font-size:40px;
+  font-family: Gloucester MT Extra Condensed;
 }
 
 .about {
-  font-size: 24px;}
+  font-size: 24px;
+  font-family: Gloucester MT Extra Condensed;
+}
 
 .name {
   font-size: 30px;
@@ -83,6 +86,7 @@ color pink;}
     margin-right: auto;
     width: 8em;
     padding:200px;
+    font-family: Gloucester MT Extra Condensed;
 }
 
 h6 {
@@ -91,4 +95,6 @@ h6 {
    Position: fixed;
    color: black;
    font-style: bold;
+  font-family: French Script MT Regular;
+   font-size: 30px;
  }
