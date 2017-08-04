@@ -79,16 +79,15 @@ footer {
    overflow: hidden;
 }
 
-.seriespic img {
+.seriesof4 img {
    max-width: 300px;
    height: 500px;
    border-radius: 10px;
    overflow: hidden;
    margin-bottom: 10px;
-
 }
 
-.seriesof4 {
+.seriesof4, .seriesof6, .smaller {
    width: 77%;
    margin: auto;
    display: flex;
@@ -99,8 +98,21 @@ footer {
    /*border: 1px solid yellow;*/
 }
 
+.seriesof6 img {
+   max-width: 300px;
+   border-radius: 10px;
+   overflow: hidden;
+   margin-bottom: 10px;
+}
+
+.smaller img {
+   max-width: 610px;
+   height: 100%;
+   margin: 0 auto;
+}
+
 .caption {
-   width: 100%;
+   min-width: 100%;
    padding: 20px;
    background-color: hsla(0, 0%, 100%, 0.7);
    /*border: 1px solid blue;*/
@@ -204,15 +216,23 @@ footer p {
    padding: 10px 0;
 }
 
-.date, .medium, .size, .description {
+.date, .medium, .size, .description, .click {
    font: 300 0.8rem "Raleway", "Open Sans";
    line-height: 1.2rem;
 }
 
-.date, .description {
+.date, .description, .click {
    margin-top: 10px;
 }
 
 .date {
    font-style: italic;
+}
+
+.caption {
+   width: inherit;
+}
+
+.description {
+   width: inherit;
 }
