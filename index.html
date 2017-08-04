@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta charset="utf-8">
-   <title></title>
-   <link href="css/base.css" rel="stylesheet">
-   <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-</body>
+   <head>
+      <meta charset='utf-8'>
+      <title>Taehwan Lee | Web Design 2017</title>
+      <link rel="stylesheet" href="css/colorbox.css">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/jquery.colorbox.js"></script>
+      <script>
+         $(document).ready(function(){
+            //Examples of how to assign the Colorbox event to elements
+            $(".group1").colorbox({rel:'group1', transition:"fade"});
+            $(".group2").colorbox({rel:'group2', transition:"fade"});
+            $(".group3").colorbox({rel:'group3', transition:"fade"});
+            $(".group4").colorbox({rel:'group4', transition:"fade"});
+
+            $(".callbacks").colorbox({
+               onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+               onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+               onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+               onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+               onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+            });
+
+            $('.non-retina').colorbox({rel:'group5', transition:'none'})
+            $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+
+            //Example of preserving a JavaScript event for inline calls.
+            $("#click").click(function(){
+               $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+               return false;
+            });
+         });
+      </script>
+
+   </head>
+   <body>
+      <h1>Danny (Taehwan) Lee</h1>
+      <h2>Graphic Designer | Illustrator | Idea Generator</h2>
+
+
+<table class="center">
+
+   <tr>
+      <th>
+      <p><a class="group1" href="img/21.jpg" title="Mayo Surfboard Logo Design"><img src="img/brush7.png" alt="brush"></a></p>
+      <p><a class="group1" href="img/22.jpg" title="Logo Parody Designs"></a></p>
+      <p><a class="group1" href="img/23.jpg" title="Tobias Frere-Jones Brochure"></a></p>
+      <p><a class="group1" href="img/24.jpg" title="Iran Info Design"></a></p>
+      <p><a class="group1" href="img/25.jpg" title="RISD Undergraduate Pixels"></a></p>
+      <p><a class="group1" href="img/26.jpg" title="Diglett/Dugtrio Illustration"></a></p>
+      <p><a class="group1" href="img/27.png" title="Chess Pieces"></a></p>
+      <p><a class="group1" href="img/28.jpg" title="Material Alphabet"></a></p>
+      <p><a class="group1" href="img/29.png" title="Type Director Club Poster Design"></a></p>
+      <p><a class="group1" href="img/30.jpg" title="Korean Fire"></a></p>
+      </th>
+      <th>
+
+         <p><a class="group3" href="img/who.svg" title=""><img src="img/qmark7.png" alt="qmark"></a></p>
+      </th>
+   </tr>
+
+   <tr>
+      <th><p><a class="group2" href="img/ALogo.svg" title=""><img src="img/logo7.png" alt="logo"> </a></p></th>
+      <th>
+         <p><a class="group4" href="img/contact.svg" title=""><img src="img/phone7.png" alt="contact"></a></p>
+
+      </th>
+   </tr>
+
+</table>
+
+
+<footer> ©Copyright 2017 | Danny (Taehwan) Lee | All Rights Reserved. </footer>
+   </body>
 </html>
+
