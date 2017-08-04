@@ -3,6 +3,12 @@
    height: 2900px;
    background-color: black;
 }
+#branding-container{
+   width: 100%;
+   height: 4330px;
+   background-color: black;
+   z-index: -1;
+}
 h2{
    position: absolute;
    top: 300px;
@@ -15,7 +21,7 @@ h2{
    padding: 5px 10px;
    border-right: 1px solid grey;
 }
-.show-image{
+.show-image-d{
    position: relative;
    margin-top: 150px;
    top: 30px;
@@ -26,63 +32,35 @@ h2{
    position: relative;
    top: 0;
    height: 500px;
-/*   border: 1px solid white;*/
    margin-bottom: 200px;
 }
 
-
-/*h2{
+.show-image{
    position: relative;
-   top: 100px;
-   left: 100px;
-   font-size: 2em;
-   color: white;
-}*/
-/*#show-container{
-   position: relative;
-   width: 100%;
-   height: 5800px;
-   top: 200px;
-   background-color: black;
+   margin-top: 150px;
+   top: 30px;
+   left: 23%;
+   height: 600px;
 }
-*/
 
-/*#presentation{
-   position: fixed;
-   width: 860px;
-   height: 650px;
-   top: 100px;
-   left: 25%;
-   background-color: rgba(200,200,200,1);
-   background-color: grey;
-   background-color: rgba(60,60,60,1);
-   border: 1px solid grey;
-}*/
-
-/*.show-image{
+.branding{
    position: relative;
-   margin: ;
-   left: 11%;
-   height: 650px;
-}*/
-
-/*.show-image2{
-   position: relative;
-   left: 21%;
-   height: 650px;
+   margin-top: 150px;
+   top: 15px;
+   left: 16%;
+   height: 550px;
 }
-.show-image3{
+.branding-b{
    position: relative;
-   left: 12%;
-   height: 650px;
-}*/
-
-/*.show-image{
+   margin-top: 150px;
+   top: 30px;
+   left: 23%;
+   height: 600px;
+}
+.branding-c{
    position: relative;
-   top: 200px;
-   left: 22%;
-   width: 50%;
-   height: 650px;
-   margin-top: 50px;
-}*/
-
+   margin-top: 150px;
+   top: 30px;
+   left: 15%;
+   height: 500px;
+}

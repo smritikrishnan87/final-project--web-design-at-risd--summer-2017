@@ -9,26 +9,8 @@
    height: 800px;
    top: 200px;
    left: 7%;
-/*   border: 1px solid white;*/
-/*   background-color: white;*/
 }
 
-/*h2{
-   color: orange;
-   font: 2em "Garamond";
-   font-weight: 100;
-   font-variant: small-caps;
-   letter-spacing: 10px;
-}*/
-/*#first {
-   position: relative;
-   top: 250px;
-   left: 250px;
-}
-#second {
-   position: relative;
-   top:;
-}*/
 .frames{
    position: relative;
    width: 350px;
@@ -36,14 +18,12 @@
    float: left;
    margin-left: 45px;
    margin-bottom: 70px;
-/*   border: 2px solid grey;*/
-/*   border: 2px ;*/
-/*   border-radius: 55px;*/
 }
 
 .frame:hover {
    opacity: 0.6;
 }
+
 .frame{
    width: 350px;
    opacity: 1;
@@ -53,11 +33,6 @@
    transition: .5s ease;
    backface-visibility: hidden;
 }
-/*.branding{
-   position: absolute;
-   width: 380px;
-   top: 10px;
-}*/
 
 .middle{
    width: 350px;

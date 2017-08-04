@@ -168,9 +168,9 @@ p{
    left: 1280px;
    animation: 4s ease-in 6s infinite alternate none running a-n;
 }
-/*@keyframes a-n{
+@keyframes a-n{
    from{opacity: 0.1;}
-   to{opacity: 0.8;}*/
+   to{opacity: 0.8;}
 
 
 
